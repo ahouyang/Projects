@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>NBA Info</title>
+		<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+  		<link rel = "stylesheet"
+   type = "text/css"
+   href = "css/style.css" />
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+	</head>
+	<body id="players">
+		<header>
+			<h1>
+				NBA Info
+			</h1>
+			<nav>
+				<div><a href="index.html">Back</a></div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<div id="playersList">
+			</div>
+			<div id="selected">
+				Selected Players:
+			</div>
+			<button id="graph">Generate Graph</button>
+			<label for="xAxis">
+				X-Axis
+			</label>
+			<select id="xAxis">
+				<option value="PtsPerGame">PPG</option>
+				<option value="FgPct">FG%</option>
+				<option value="tsp">TS%</option>
+				<option value="Fg2PtPct">2FG%</option>
+				<option value="Fg3PtPct">3FG%</option>
+			</select>
+			<label for="yAxis">
+				Y-Axis
+			</label>
+			<select id="yAxis">
+				<option value="PtsPerGame">PPG</option>
+				<option value="FgPct" selected="selected">FG%</option>
+				<option value="tsp">TS%</option>
+				<option value="Fg2PtPct">2FG%</option>
+				<option value="Fg3PtPct">3FG%</option>
+			</select>
+			<canvas id="myChart"  width="100" height="100"></canvas>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,20 @@
+h1{
+	font-family: Contail One;
+	background-color: #242323;
+	color: #EFEFEF;
+    padding: 20px 50px;
+}
+div{
+	font-family: Times New Roman;
+	margin: 10px 10px;
+}
+div.player{
+	font-size: smaller;
+	
+}
+#playersList{
+	float: left;
+}
+.selected{
+	
+}
